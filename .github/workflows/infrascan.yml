@@ -26,7 +26,7 @@ jobs:
             --out /scan/infrascan-reports/report.html
             
       - name: Upload InfraScan Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: always() # Upload report even if the scan step fails
         with:
           name: infrascan-report
